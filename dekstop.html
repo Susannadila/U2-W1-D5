@@ -7,6 +7,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Versione Dekstop</title>
+		<link
+			rel="stylesheet"
+			type="text / css"
+			href="./S5-P-Medium-Clone-Start/assets/css/reset.css" />
 		<style>
 			.main-nav {
 				display: flex;
@@ -15,8 +19,8 @@
 				background-color: #f5c247;
 				padding: 2em;
 				border-bottom: black solid 1px;
-                z-index: 2;
-               
+				z-index: 2;
+				position: sticky;
 			}
 
 			.main-nav ul {
@@ -47,12 +51,6 @@
 				width: 200px;
 			}
 
-
-        
-
-
-
-
 			.container {
 				display: flex;
 				justify-content: flex-start;
@@ -81,38 +79,78 @@
 				padding-top: 2px;
 			}
 
-.iniziologo {
-    display: flex;
-    align-self: flex-start;
-    padding: 2em;
-    margin:9px 0px 0px;
+			.iniziologo {
+				display: flex;
+				align-self: flex-start;
+				padding: 2em;
+				margin: 9px 0px 0px;
+			}
+			header {
+				display: flex;
+				flex-wrap: wrap;
+			}
 
-}
-header{
-    display: flex;
-    flex-wrap: wrap;
-}
+			.cards {
+				max-width: 1450px;
+				margin: 10px auto;
+				display: flex;
+				flex-wrap: wrap;
+				padding-bottom: 20px;
+			}
+			.card {
+				width: 30%;
+				background-color: white;
+				margin: 0 1.5%;
+				display: flex;
+			}
 
-.container1{
-    
-    padding:2em;
-    margin-top: -52px;
-    width: 200px;
-    height: 60px;
-    justify-content: flex-start;
-}
+			.card_image {
+				width: 30px;
+				height: 30px;
+				border: none;
+				border-radius: 19px;
+				padding: 1.5em;
+			}
 
-.person{
-    display: flex;
+			.boxs {
+				max-width: 600px;
+				height: 300px;
+				margin: 2.5em 6%;
+				flex-direction: column;
+				display: flex;
+				}
 
-}
+			
+
+			.boxs .bottone_box {
+				background-color: #f3f3f3;
+				color: #757575;
+				border-radius: 22px;
+				border: none;
+				width: 90px;
+				height: 30px;
+			}
+
+			.box_picture {
+				width: 150px;
+				height: 110px;
+				float: right;
+				clear: both;
+			
+			
+			}
+
+
+	
+  
 
 
 
-	</style>
+
+
+		</style>
 	</head>
 	<body>
-        
 		<nav class="main-nav">
 			<img
 				src="./S5-P-Medium-Clone-Start/assets/imgs/Schermata 2023-01-13 alle 10.17.27.png"
@@ -125,7 +163,7 @@ header{
 				<button>Get Started</button>
 			</ul>
 		</nav>
-        
+
 		<div class="container">
 			<h1>Stay Curious.</h1>
 			<div>
@@ -135,35 +173,138 @@ header{
 			</div>
 			<button>Start reading</button>
 		</div>
-        <div class="emme">
-            <div> 
-                 
-                </div>
-            <div>
+		<div class="emme">
+			<div></div>
+			<div></div>
+		</div>
 
-            </div>
-        </div>
-		
-        <header>
+		<header>
 			<div class="iniziologo">
 				<img
 					src="./S5-P-Medium-Clone-Start/assets/imgs/svg/trending.svg"
 					alt="trendig logo" />
 				<p>TRENDING ON MEDIUM</p>
 			</div>
-        </header>
-			
-        <div class="container1">
-				<div>
-					<div class="Person">
-                        <div> <number> 01 </number> </div>
-                        <img src="./S5-P-Medium-Clone-Start/assets/imgs/image01.jpeg" alt="foto tom">
-                        <h3>Tom Cooper</h3>
+		</header>
+
+		<section class="cards">
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image01.jpeg"
+					alt="foto1" />
+				<div class="card_testo">
+					<h5>Tom Cooper</h5>
 					<h4>Ukraine War,12 January 2023</h4>
 					<span>Jan 12 . 7 min read</span>
-                </div>
-                </div>
+				</div>
 			</div>
-		
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image02.png"
+					alt="foto2" />
+				<div class="card_testo">
+					<h5>Arthur Hayes in Entrepreneur's Handbook</h5>
+					<h4>Comeback</h4>
+					<span>Oct 26 24 min read</span>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image03.jpeg"
+					alt="foto3" />
+				<div class="card_testo">
+					<h5>Tom Cooper</h5>
+					<h4>
+						How I Learned to Love My Breasts Even Though One Is A Horcrux For
+						Voldemort
+					</h4>
+					<span>Oct 26 2 min read</span>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image04.png"
+					alt="foto4" />
+				<div class="card_testo">
+					<h5>Frank Mastropolo in The Riffk</h5>
+					<h4>The Night Paul McCartney Donned a Disguise at Fillmore East</h4>
+					<span>Oct 22 3 min read</span>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image05.jpeg"
+					alt="foto5" />
+				<div class="card_testo">
+					<h5>Frank Andrade in Towards Data Science</h5>
+					<h4>
+						5 Python Projects to Automate Your Life: From Beginner to Advanced
+					</h4>
+					<span>Oct 13 6 min read</span>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					class="card_image"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image06.png"
+					alt="foto6" />
+				<div class="card_testo">
+					<h5>Wesley Smits in JavaScript in Plain English</h5>
+					<h4>How To Make Visual Studio Code Look Amazing</h4>
+					<span>Oct 20 7 min read</span>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<section class="boxs">
+			<div class="box">
+				<img
+					class="box_logo"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image07.jpeg"
+					alt="foto7" />
+				<div class="box_testo">
+					<h5>Robert Roy Britt</h5>
+					<h4>How Old is Old?</h4>
+					<a
+						>What we consider "old" changes dramatically with age, and our
+						perspectives can be predictive of how well we age
+					</a>
+					<span>Oct 27 • 5 min read</span>
+					<button class="bottone_box">Aging</button>
+					<img
+						src="./S5-P-Medium-Clone-Start/assets/imgs/svg/star.svg"
+						alt="stella" />
+				</div>
+				
+				<img class="box_picture" src="./S5-P-Medium-Clone-Start/assets/imgs/image08.jpeg" />
+				
+			</div>
+
+			<div class="box">
+				<img
+					class="box_logo"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image09.jpeg"
+					alt="foto7" />
+				<div class="box_testo">
+					<h5>Taru Anniina Lilkanen</h5>
+					<h4>Is Taylor Swift Allowed to Speak About Fat?</h4>
+					<a>Can you speak about your trauma if you don't look traumatized?
+					</a>
+					<span>Oct 24 • 6 min read</span>
+					<button class="bottone_box">Health</button>
+					<img
+						src="./S5-P-Medium-Clone-Start/assets/imgs/svg/star.svg"
+						alt="stella" />
+				</div>
+				
+				<img class="box_picture" src="./S5-P-Medium-Clone-Start/assets/imgs/image10.jpeg" />
+				
+			</div>
+		</section>
 	</body>
 </html>
