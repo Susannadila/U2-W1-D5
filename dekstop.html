@@ -7,6 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Versione Dekstop</title>
+
 		<link
 			rel="stylesheet"
 			type="text / css"
@@ -19,8 +20,12 @@
 				background-color: #f5c247;
 				padding: 2em;
 				border-bottom: black solid 1px;
-				z-index: 2;
-				position: sticky;
+                transition: background-color 0.5s ease-in-out;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 999;
 			}
 
 			.main-nav ul {
@@ -44,6 +49,7 @@
 				border-radius: 22px;
 				width: 100px;
 				height: 40px;
+				transition: background-color 0.5s ease-in-out;
 			}
 
 			.main-nav img {
@@ -118,9 +124,7 @@
 				margin: 2.5em 6%;
 				flex-direction: column;
 				display: flex;
-				}
-
-			
+			}
 
 			.boxs .bottone_box {
 				background-color: #f3f3f3;
@@ -136,24 +140,13 @@
 				height: 110px;
 				float: right;
 				clear: both;
-			
-			
 			}
-
-
-	
-  
-
-
-
-
-
 		</style>
 	</head>
 	<body>
 		<nav class="main-nav">
 			<img
-				src="./S5-P-Medium-Clone-Start/assets/imgs/Schermata 2023-01-13 alle 10.17.27.png"
+				src="./S5-P-Medium-Clone-Start/assets/imgs/svg/logo.svg"
 				alt="logo" />
 			<ul>
 				<li>Our Story</li>
@@ -280,9 +273,10 @@
 						src="./S5-P-Medium-Clone-Start/assets/imgs/svg/star.svg"
 						alt="stella" />
 				</div>
-				
-				<img class="box_picture" src="./S5-P-Medium-Clone-Start/assets/imgs/image08.jpeg" />
-				
+
+				<img
+					class="box_picture"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image08.jpeg" />
 			</div>
 
 			<div class="box">
@@ -293,18 +287,19 @@
 				<div class="box_testo">
 					<h5>Taru Anniina Lilkanen</h5>
 					<h4>Is Taylor Swift Allowed to Speak About Fat?</h4>
-					<a>Can you speak about your trauma if you don't look traumatized?
-					</a>
+					<a>Can you speak about your trauma if you don't look traumatized? </a>
 					<span>Oct 24 • 6 min read</span>
 					<button class="bottone_box">Health</button>
 					<img
 						src="./S5-P-Medium-Clone-Start/assets/imgs/svg/star.svg"
 						alt="stella" />
 				</div>
-				
-				<img class="box_picture" src="./S5-P-Medium-Clone-Start/assets/imgs/image10.jpeg" />
-				
+
+				<img
+					class="box_picture"
+					src="./S5-P-Medium-Clone-Start/assets/imgs/image10.jpeg" />
 			</div>
 		</section>
+		<script src="javascript.js"></script>
 	</body>
 </html>
